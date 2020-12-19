@@ -21,7 +21,7 @@ print(x.shape)
 print(y.shape)
 
 
-model = LinearRegression.LinearRegression()
+model = LinearRegression()
 model.fit(x, y)
 model.plotdata(x, y)
 model.plotregressor(x, y)
