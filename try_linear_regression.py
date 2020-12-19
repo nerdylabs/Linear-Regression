@@ -4,7 +4,7 @@ import numpy as np
 
 x= []
 y = []
-with open("ex1data1.txt", mode='r') as file:
+with open("data.txt", mode='r') as file:
     for idx, lines in enumerate(file):
         #print(idx, lines)
         line = lines.split(",")
