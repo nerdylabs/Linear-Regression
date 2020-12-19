@@ -22,7 +22,17 @@ Now create the instance of the class as:
       
       return_params--returns the trained parameters(default=False)...set return_params = True if you want the trained parameters
       
- 2] Use model.plotdata(X, y,title="Title", X_label="X-axis", y_label="Y-axis"):
+ 2] Use model.predict(X):
+     
+ 
+ This method returns prediction for a give set of values of X
+ 
+        X--the value of X for which you want to predict the values of y
+               
+              
+ 
+ 
+ 3] Use model.plotdata(X, y,title="Title", X_label="X-axis", y_label="Y-axis"):
    
    
    This method plots your dataset
@@ -37,7 +47,7 @@ This is as example of how your plot might look like:
 ![](Images/Plot_data.png)
  
  
- 3] Use model.plotregressor(X, y,title="Title", X_label="X-axis", y_label="Y-axis")
+ 4] Use model.plotregressor(X, y,title="Title", X_label="X-axis", y_label="Y-axis")
           
   
   
@@ -54,7 +64,7 @@ This is an example of how your plot might look like:
 ![](Images/Plot_regressor.png)
 
 
- 4] Use model.plotcost()
+ 5] Use model.plotcost()
      
   
   This method plots cost function
