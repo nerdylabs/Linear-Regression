@@ -51,12 +51,12 @@ class LinearRegression():
         plt.ylabel(y_label)
         plt.show()
 
-    def plotcost(self, X_label="iterations", y_label="Cost value"):
+    def plotcost(self):
         random = np.asarray(list(range(0, max(self.J_history.shape))))
         plt.plot(random, self.J_history, color = 'blue')
         plt.title("cost function")
-        plt.xlabel(X_label)
-        plt.ylabel(y_label)
+        plt.xlabel("Iterations")
+        plt.ylabel("Cost value")
         plt.show()
 
 
