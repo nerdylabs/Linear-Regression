@@ -31,6 +31,12 @@ class LinearRegression():
         #print(self.J_history.shape)
         if return_prams ==True:
             return self.J_history, self.theta
+        
+    def predict(self, X):
+        #x = X
+        m = max(x.shape)
+        X = np.concatenate((np.ones((m,1)), X), axis=1)
+        return np.dot(X, self.theta)
 
 
     def plotdata(self, X, y,title="Title", X_label="X-axis", y_label="Y-axis"):
